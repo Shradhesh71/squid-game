@@ -112,8 +112,8 @@ export default function NetworkPacketChallenge() {
     }
 
     // Add 3 suspicious packets with the hidden data
-    // The flag is split across these packets
-    newPackets.push({
+    // The flag is split across these packets to avoid detection
+    newPackets.push({ 
       id: 21,
       timestamp: new Date(Date.now() - Math.floor(Math.random() * 3600000))
         .toISOString()
